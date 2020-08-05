@@ -1,0 +1,29 @@
+header#header
+	.container
+		div
+			strong.logo
+				a(href="#")
+					img(src="images/logo.png", alt="monblanproject", width="136", height="150")
+		div
+			.logo-holder
+				strong.logo-alt monblanproject
+				.start-badge Start on 
+					time(datetime="2016-02-17") 17-02-2016
+			ul.project-data
+				li
+					strong 870 
+					| posts
+				li
+					strong 11,787 
+					| followers
+				li
+					strong 112 
+					| following
+			form(action="#").form-dates-range
+				label(for='from') Date
+				.form-group
+					input#from(type='text', name='from', placeholder="from")
+					a(href="#").btn-clear.icon.icon-close
+				.form-group
+					input#to(type='text', name='to', placeholder="to")
+					a(href="#").btn-clear.icon.icon-close

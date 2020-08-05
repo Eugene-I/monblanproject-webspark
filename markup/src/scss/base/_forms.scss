@@ -1,0 +1,63 @@
+// forms
+
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+//input[type='url'],
+// input[type='date'],
+textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	background: $form-element-background;
+	border: 1px solid $form-element-border-color;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: $placeholder-color;
+	display: block;
+	font-size: 14px;
+	height: 32px;
+	line-height: 17px;
+	margin: 0;
+	outline: none;
+	padding: $form-element-padding;
+	transition: border 0.3s;
+	width: 100%;
+	@include placeholder {
+		color: $placeholder-color;
+	}
+}
+
+select {
+	-webkit-border-radius: 0;
+	
+	.hideme {
+		display: none;
+	}
+}
+
+textarea {
+	resize: vertical;
+	vertical-align: top;
+	height: 150px;
+	min-height: 120px;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+}
+
